@@ -1,7 +1,10 @@
 <!doctype html>
 <html lang="en">
-<head
+<head>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gidole&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -10,9 +13,9 @@
 </head>
 <body>
 <div class="intro">
-    <table cellspacing="15">
+    <table cellspacing="15" class="intro_table">
     <tr>
-        <td><img src="дима1.jpg" width="300" alt="я" /></td>
+        <td><img id="photo" src="дима1.jpg" width="300" alt="я" /></td>
         <td><h1>Дмитрий Агапов</h1>
             <p>Студент <strong>3 курса!</strong> Занимаюсь программированием, музыкой, спортом <br>
                 <em>(и как-то умудряюсь выживать при этом)</em></p>
@@ -49,9 +52,9 @@
 
 <hr color="grey">
 
-<div class="table">
+<div class="table_skills">
     <h2>Таблица уровня владения навыками:</h2>
-    <table border="0" cellspacing="15">
+    <table border="0" cellspacing="15" class="tablesk">
         <thead>
             <tr>
                 <th>Навык</th>
@@ -77,30 +80,37 @@
 <div class="form">
     <h2>Связаться со мной:</h2>
     <form>
-        <label for="name" id="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя...">
+        <div class="form-group">
+            <label for="name" id="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя...">
+            <br>
+            <label for="email" id="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Введите email...">
+            <br>
+            <label for="phone" id="phone">Ваш номер телефона:</label>
+            <input type="tel" id="phone" placeholder="Введите номер телефона...">
+            <br>
+            <label for="date" id="date">Дата обращения:</label>
+            <input type="date" id="date">
+        </div>
         <br>
-        <label for="email" id="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email...">
-        <br>
-        <label for="phone" id="phone">Ваш номер телефона:</label>
-        <input type="tel" id="phone" placeholder="Введите номер телефона...">
-        <br>
-        <label for="date" id="date">Дата обращения:</label>
-        <input type="date" id="date">
-        <br>
-        Цель связи:<br>
-        <label for="check1" id="check1">Общение</label>
-        <input type="checkbox" id="check1">
-        <br>
-        <label for="check2" id="check2">Сотрудничество</label>
-        <input type="checkbox" id="check2">
-        <br>
-        <label for="text" id="text">Ваше сообщение:</label>
-        <br>
-        <textarea id="text"></textarea>
-        <br>
-        <input type="submit" value="Отправить!">
+        <h2>Цель связи:</h2><br>
+        <div class="checkbox">
+            <label for="check1" id="check1">Общение</label>
+            <input type="checkbox" id="check1">
+            <br>
+            <label for="check2" id="check2">Сотрудничество</label>
+            <input type="checkbox" id="check2">
+        </div>
+            <br>
+        <div class="form-group">
+            <label for="text" id="text"><h2>Ваше сообщение:</h2></label>
+            <br>
+            <textarea id="text"></textarea>
+            <br>
+        </div>
+            <input class="submitbtn" type="submit" value="Отправить!">
+
 
     </form>
 </div>
