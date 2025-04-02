@@ -213,10 +213,11 @@ ol li:before {
 
 input[type="checkbox"] {
     transform: scale(1.5);
+    vertical-align: text-top;
 }
 
 .submitbtn {
-    padding: 15px 20px 15px 20px;
+    padding: 15px 20px;
     font-family: inherit;
     font-size: 20px;
     background-color: #0f141e;
@@ -231,3 +232,70 @@ input[type="checkbox"] {
     opacity: 0.9;
 }
 
+.input-file {
+    position: relative;
+    display: inline-block;
+    font-size: 28px;
+}
+
+.input-file span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 20px;
+    vertical-align: middle;
+    color: ghostwhite;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #0f141e;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.input-file:hover span {
+    opacity: 0.9;
+}
+
+#range {
+    font-size: 28px;
+}
+
+input[type=range] {
+ width: 20%;
+}
+
+input[type=button] {
+    padding: 15px 20px;
+    font-family: inherit;
+    font-size: 20px;
+    background-color: #0f141e;
+    color: ghostwhite;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
+}
+
+input[type=button]:hover {
+    opacity: 0.9;
+}
+
+input[type=button]:active {
+    opacity: 0.5;
+}
